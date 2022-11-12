@@ -1,0 +1,89 @@
+.offer-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 250px;
+    grid-column-gap: 30px;
+    padding-bottom: 120px;
+    .card {
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        padding-top: 28px;
+        padding-left: 24px;
+        display: grid;
+        grid-template-columns: 227px;
+        grid-template-rows: 1fr 2fr 2fr 2fr;
+        &-title {
+            font-family: "Mulish";
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 28px;
+            color: #555555;
+        }
+        &-descr {
+            font-family: "Mulish";
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: #757575;
+        }
+        &-pay {
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+            .shop {
+                align-self: start;
+                padding-top: 5px;
+                font-family: "Mulish";
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 15px;
+                color: #ffffff;
+                text-align: center;
+                text-decoration: none;
+                width: 91px;
+                height: 26px;
+                background: #7ac751;
+                border-radius: 2px;
+            }
+            .shop:hover {
+                color: #7ac751;
+                background-color: #555555;
+            }
+        }
+        .promotion__timer {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            .timer__block {
+                background: #7ac751;
+                clip-path: circle(50%);
+                width: 40px;
+                height: 40px;
+                font-family: "Rubik";
+                font-weight: 400;
+                font-size: 6px;
+                line-height: 7px;
+                text-align: center;
+                letter-spacing: 0.005em;
+                text-transform: uppercase;
+                color: #ffffff;
+                span {
+                    display: block;
+                    margin-top: 6px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 120%;
+                    text-align: center;
+                    color: #ffffff;
+                }
+                hr {
+                    margin-top: -2px;
+                    height: 0px;
+                    border: none;
+                }
+            }
+        }
+    }
+    .card:hover {
+        cursor: pointer;
+    }
+}

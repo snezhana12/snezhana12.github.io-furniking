@@ -1,0 +1,36 @@
+* {
+    font-family: "Mulish", sans-serif;
+    font-family: "Rubik", sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.new-price {
+    font-family: 'Mulish';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #7AC751;
+    cursor: pointer;
+    }
+.old-price {
+    font-family: 'Mulish';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    text-decoration-line: line-through;
+    color: #CCCCCC;
+}
+
+@import 'collection.scss';
+@import 'trending.scss';
+@import 'offer.scss';
+@import 'media.scss';

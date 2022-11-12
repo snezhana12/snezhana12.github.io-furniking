@@ -1,0 +1,252 @@
+@media (max-width: 1200px) {
+   
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+    .title {
+        margin-top: 0;
+    }
+
+    .collection__wrapper {
+
+    .collection__block:first-child  {
+
+        background-size:auto;
+    }
+    .collection__block:nth-child(2) {
+
+        background-size:auto;
+    }
+    .collection__block:last-child {
+
+        background-size: auto;
+        
+    }
+}
+    .catalog__content {
+        
+        grid-template-columns: repeat(3, 3fr);
+        grid-column: 10px;
+        grid-row-gap: 50px;
+    }
+    .offer__wrapper {
+        .title {
+            margin-top: 120px;
+        }
+    }
+    .offer-cards {
+        margin-right: 10px;
+        grid-template-columns: repeat(2, 480px);
+        grid-row-gap: 5px;
+        grid-template-rows: max-content;
+        justify-content: space-around;
+        .card {
+            justify-self: center;
+            padding: 10px;
+        }   
+    }
+    
+}
+
+@media (max-width: 992px) {
+    .collection {
+        padding-bottom: 0;
+        .title {
+        margin-top: 80px;
+    }
+    }
+    .offer__wrapper {
+        .title {
+            margin-top: 80px;
+        }
+    }
+    .offer-cards {
+        justify-content: center;
+        grid-template-columns: 500px;
+        .card {
+            align-self: center;
+            width: 100%;
+        }   
+    }
+}
+
+@media (max-width: 768px) {
+    .collection {
+        padding-bottom: 30px;
+        padding-top: 30px;
+        &__wrapper {
+            grid-template-columns: 485px;
+            grid-template-rows: repeat(3,1fr);
+            grid-template-areas: 
+        "furniture"
+        "bookcase"
+        "sofa";
+        justify-content: space-around;
+        .collection__block {
+            .collection__title {
+            margin-top: 10px;
+        }
+        .collection__subtitle {
+            margin-top: 10px;
+        }
+        a.collection__link {
+            margin-top: 10px;
+        }
+        }
+        .collection__block:first-child {
+            height: 100%;
+            background-position:center;
+            background-size: 100%;
+        }
+        }
+        
+    }
+    .title {
+            margin-bottom: 30px;
+            font-size: 28px;
+            line-height: 38px;
+        }
+        .catalog__tabs {
+            grid-gap: 0;
+            margin-bottom: 30px;
+            .catalog__tab {
+                a {
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+        }
+    .catalog__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .catalog-item {
+        &__img {
+            background-position:center;
+        }
+    }
+    }
+    .offer__wrapper {
+        .title {
+            margin-top: 20px;
+        }
+    }
+    .offer-cards {
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    
+    .offer-cards {
+        margin-right: 0;
+        justify-content: center;
+        grid-template-columns: 425px;
+        .card {
+            align-self: end;
+            width: 100%;
+        }   
+    }
+}
+
+@media (max-width: 480px) {
+    .collection {
+        padding-bottom: 10px;
+        padding-top: 0;
+    &__wrapper {
+            grid-template-columns: 1fr;
+            grid-gap: 0;
+            grid-template-areas: 
+        "furniture"
+        "bookcase"
+        "sofa";
+    }
+    .collection__block{
+        grid-template-rows: auto;
+        background-position: 60% 30px;
+        grid-gap: 0;
+        
+        .collection__title {
+            margin-top: 30px;
+            font-size: 18px;
+        }
+        .collection__subtitle {
+            margin-top: 0;
+            font-size: 16px;
+        }
+        a.collection__link {
+            margin-top: 0;
+            font-size: 14px;
+        }
+    }
+    }
+    .title {
+            margin-bottom: 10px;
+            font-size: 20px;
+            line-height: 38px;
+        }
+    .catalog__tabs {
+        grid-template-columns: repeat(3,1fr);
+            grid-gap: 0;
+            margin-bottom: 30px;
+            .catalog__tab {
+                max-width: 90px;
+                justify-self: end;
+                a {
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+        }
+    .catalog__content {
+    grid-template-columns: 1fr;
+    }
+    .btn {
+        margin-top: 15px;
+    }
+    .offer-cards {
+        justify-content: center;
+        grid-template-columns: 310px;
+        padding: 0;
+        .card {
+            padding: 0;
+            grid-template-columns: 190px;
+            .card-title {
+                margin-left: 10px;
+                font-size: 16px;
+            }
+            .card-descr {
+                display: none;
+            }
+            .card-pay {
+                .new-price {
+                font-size: 12px;
+            }
+            .old-price {
+                font-size: 12px;
+            }
+            .shop {
+                max-width: 50px;
+                max-height: 20px;
+                font-size: 8px;
+            }
+            }
+           .promotion__timer {
+            margin-left: 5px;
+            max-height: 40px;
+            .timer__block {
+                width: 30px;
+                height: 30px;
+                
+                span {
+                    margin-top: 4px;
+                    font-size: 10px;
+                }
+            }
+           } 
+        }
+    }
+}
+
+
+
